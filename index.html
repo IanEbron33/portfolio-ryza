@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryza Mae Diocton | E-Portfolio</title>
+  <meta name="description" content="Digital portfolio of Ryza Mae Diocton — Technology-Enhanced Learning reflections, ICT tools, and digital literacy journey at Samar State University." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav-header" id="nav-header">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo">Ryza<span>.</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- MOBILE NAV OVERLAY (outside header to avoid backdrop-filter containment bug) -->
+  <ul class="nav-links" id="nav-links" role="menu">
+    <li><a href="#about" class="nav-link" role="menuitem">About</a></li>
+    <li><a href="#topics" class="nav-link" role="menuitem">Topics</a></li>
+    <li><a href="#synthesis" class="nav-link" role="menuitem">Synthesis</a></li>
+    <li><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+  </ul>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <canvas id="particle-canvas"></canvas>
+      </div>
+      <div class="hero-content reveal">
+        <div class="hero-avatar-wrap">
+          <img src="assets/images/Profile-Image.jpg" alt="Ryza Mae Diocton" class="hero-avatar" />
+          <div class="hero-avatar-ring"></div>
+        </div>
+        <p class="hero-eyebrow">Technology-Enhanced Learning</p>
+        <h1 class="hero-title">My Digital<br /><span class="text-accent">Portfolio</span></h1>
+        <p class="hero-sub">A reflective journey through non-digital and digital tools, ICT integration, and 21st-century digital literacy — documenting growth as an educator-in-training.</p>
+        <div class="hero-actions">
+          <a href="#topics" class="btn btn-primary">Explore Topics</a>
+          <a href="#about" class="btn btn-ghost">About Me</a>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator">
+        <div class="scroll-line"></div>
+        <span>scroll</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Who I Am</p>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-photo-col reveal">
+            <div class="about-photo-frame glass">
+              <img src="assets/images/Profile-Image.jpg" alt="Ryza Mae Diocton" class="about-photo" />
+              <div class="about-photo-badge">2nd Year · BSEd</div>
+            </div>
+          </div>
+          <div class="about-card glass reveal">
+            <div class="about-greeting">
+              <p class="greeting-text">Annyeonghaseyo! Ni hao! Hola! <strong>Hi!</strong></p>
+            </div>
+            <p class="about-intro">I'm <strong>Ryza Mae Diocton</strong>, a curious learner from Payao, Catbalogan City, exploring the intersection of education and technology.</p>
+            <p class="about-body">I'm a second-year student at Samar State University, pursuing a Bachelor of Secondary Education. Growing up in the beautiful province of Samar, I've always been fascinated by how people learn and grow — and lately, how technology can transform that journey.</p>
+            <p class="about-body">My passion lies in discovering how digital tools can create more engaging, inclusive, and meaningful learning experiences. I believe the future of education isn't about replacing teachers with technology, but about <em>empowering educators</em> to reach their students in new and creative ways.</p>
+            <blockquote class="about-quote">
+              "Passionate about creating meaningful learning experiences through thoughtful integration of technology and pedagogy."
+            </blockquote>
+          </div>
+          <div class="about-sidebar reveal">
+            <div class="quick-facts glass">
+              <h3 class="sidebar-title">Quick Facts</h3>
+              <ul class="facts-list">
+                <li class="fact-item">
+                  <svg class="fact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  <div><span class="fact-label">Name</span><span class="fact-value">Ryza Mae Diocton</span></div>
+                </li>
+                <li class="fact-item">
+                  <svg class="fact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <div><span class="fact-label">Location</span><span class="fact-value">Payao, Catbalogan City</span></div>
+                </li>
+                <li class="fact-item">
+                  <svg class="fact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                  <div><span class="fact-label">Institution</span><span class="fact-value">Samar State University</span></div>
+                </li>
+                <li class="fact-item">
+                  <svg class="fact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                  <div><span class="fact-label">Program</span><span class="fact-value">BS Secondary Education</span></div>
+                </li>
+                <li class="fact-item">
+                  <svg class="fact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                  <div><span class="fact-label">Year Level</span><span class="fact-value">Second Year</span></div>
+                </li>
+              </ul>
+            </div>
+            <div class="interests glass">
+              <h3 class="sidebar-title">Interests</h3>
+              <div class="interests-grid">
+                <div class="interest-tag">Cooking</div>
+                <div class="interest-tag">Dramas & Films</div>
+                <div class="interest-tag">Music</div>
+                <div class="interest-tag">Fiction Books</div>
+                <div class="interest-tag">Nature</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WELCOME BANNER -->
+    <section class="welcome-banner">
+      <div class="container">
+        <div class="banner-inner glass reveal">
+          <p class="banner-label">Ready to Explore My Learning Journey?</p>
+          <p class="banner-body">Dive into my reflections on technology-enhanced teaching and learning through the five core topics below.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOPICS -->
+    <section class="section" id="topics">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Core Reflections</p>
+          <h2 class="section-title">Five Core Topics</h2>
+        </div>
+        <div class="topics-list">
+
+          <!-- Topic 1 -->
+          <article class="topic-item reveal" id="topic-1">
+            <div class="topic-number">01</div>
+            <div class="topic-content glass">
+              <div class="topic-image-wrap">
+                <img src="assets/images/Digital-and-Non digital.jpg" alt="Non-Digital & Digital Instructional Materials" class="topic-image" />
+              </div>
+              <div class="topic-header">
+                <div class="topic-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                </div>
+                <h3 class="topic-title">Non-Digital &amp; Digital Instructional Materials</h3>
+              </div>
+              <p class="topic-body">Instructional materials are essential tools that support effective teaching and learning. Non-digital materials such as textbooks, charts, and printed modules remain reliable and accessible, especially in classrooms with limited technology. Meanwhile, digital materials like presentations, videos, and online platforms make lessons more interactive, engaging, and flexible.</p>
+              <div class="topic-reflections">
+                <div class="reflection-block">
+                  <h4 class="reflection-label">What I Realized</h4>
+                  <p>I initially believed that digital tools were always more effective. However, I came to realize that non-digital materials still play an important role in ensuring that learning continues even without technology.</p>
+                </div>
+                <div class="reflection-block">
+                  <h4 class="reflection-label">Key Insight</h4>
+                  <p>Effective teaching is not about using <em>more</em> technology, but about choosing the <em>right</em> tools. The importance of balance — digital materials enhance engagement, while non-digital materials provide consistency and accessibility.</p>
+                </div>
+                <div class="reflection-block">
+                  <h4 class="reflection-label">Moving Forward</h4>
+                  <p>I plan to combine both non-digital and digital materials to create a more inclusive and effective learning environment.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Topic 2 -->
+          <article class="topic-item reveal" id="topic-2">
+            <div class="topic-number">02</div>
+            <div class="topic-content glass">
+              <div class="topic-image-wrap">
+                <img src="assets/images/ICT-Tools.jpg" alt="ICT Tools for Teaching and Learning" class="topic-image" />
+              </div>
+              <div class="topic-header">
+                <div class="topic-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                </div>
+                <h3 class="topic-title">ICT Tools for Teaching and Learning</h3>
+              </div>
+              <p class="topic-body">ICT tools have become an essential part of modern education. Platforms like Google Classroom, Canva, Zoom, and other digital applications help teachers deliver lessons more efficiently while encouraging active participation from students.</p>
+              <div class="topic-reflections">
+                <div class="reflection-block">
+                  <h4 class="reflection-label">What I Realized</h4>
+                  <p>I was already familiar with some tools, but I realized there are many more that I still need to learn. This made me more open to continuous learning and improvement.</p>
+                </div>
+                <div class="reflection-block">
+                  <h4 class="reflection-label">Key Insight</h4>
+                  <p>ICT tools promote collaboration, creativity, and communication — but they also require preparation and responsibility. Technical issues and the need for stable internet access are real challenges.</p>
+                </div>
+                <div class="reflection-block">
+                  <h4 class="reflection-label">Moving Forward</h4>
+                  <p>I will continue exploring ICT tools and improving my skills so I can use them effectively in my future teaching career.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Topic 3 -->
+          <article class="topic-item reveal" id="topic-3">
+            <div class="topic-number">03</div>
+            <div class="topic-content glass">
+              <div class="topic-image-wrap">
+                <img src="assets/images/E-Portfolio Tools.jpg" alt="E-Portfolio as a Technology Tool" class="topic-image" />
+              </div>
+              <div class="topic-header">
+                <div class="topic-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                </div>
+                <h3 class="topic-title">E-Portfolio as a Technology Tool</h3>
+              </div>
+              <p class="topic-body">An e-portfolio is a digital collection of a student's work that showcases learning, achievements, and growth. It serves as both an assessment tool and a platform for self-reflection.</p>
+              <div class="topic-reflections">
+                <div class="reflection-block">
+                  <h4 class="reflection-label">What I Realized</h4>
+                  <p>Creating this e-portfolio was both challenging and rewarding. At first, I struggled with organizing my ideas and designing the layout. However, as I continued working on it, I began to enjoy the process and became more confident in using digital tools.</p>
+                </div>
+                <div class="reflection-block">
+                  <h4 class="reflection-label">Key Insight</h4>
+                  <p>An e-portfolio is more than just a requirement — it is a meaningful way to document learning and reflect on personal growth. It allowed me to see my progress and understand my strengths and areas for improvement.</p>
+                </div>
+                <div class="reflection-block">
+                  <h4 class="reflection-label">Moving Forward</h4>
+                  <p>I plan to continue updating my e-portfolio as part of my ongoing professional development.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Topic 4 -->
+          <article class="topic-item reveal" id="topic-4">
+            <div class="topic-number">04</div>
+            <div class="topic-content glass">
+              <div class="topic-image-wrap">
+                <img src="assets/images/Technology Collaborative Tools.jpg" alt="Technology Collaborative Tools" class="topic-image" />
+              </div>
+              <div class="topic-header">
+                <div class="topic-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <h3 class="topic-title">Technology Collaborative Tools</h3>
+              </div>
+              <p class="topic-body">Technology collaborative tools allow individuals to work together, share ideas, and communicate effectively even when they are not physically together. Tools like Google Docs, Padlet, and online communication platforms make group work more organized and efficient.</p>
+              <div class="topic-reflections">
+                <div class="reflection-block">
+                  <h4 class="reflection-label">What I Realized</h4>
+                  <p>Collaboration is deeply important in education. I have used some of these tools in group activities, and they helped improve communication and teamwork. However, not all members participate equally, which can affect the outcome.</p>
+                </div>
+                <div class="reflection-block">
+                  <h4 class="reflection-label">Key Insight</h4>
+                  <p>Collaborative tools encourage cooperation and shared responsibility. Students can exchange ideas and learn from one another — but successful collaboration depends on <em>active participation</em> and accountability.</p>
+                </div>
+                <div class="reflection-block">
+                  <h4 class="reflection-label">Moving Forward</h4>
+                  <p>I will strive to contribute more and encourage others to do the same in collaborative learning settings.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Topic 5 -->
+          <article class="topic-item reveal" id="topic-5">
+            <div class="topic-number">05</div>
+            <div class="topic-content glass">
+              <div class="topic-image-wrap">
+                <img src="assets/images/Digital Literacy.jpg" alt="Digital Literacy Skills in the 21st Century" class="topic-image" />
+              </div>
+              <div class="topic-header">
+                <div class="topic-icon-wrap">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <h3 class="topic-title">Digital Literacy Skills in the 21st Century</h3>
+              </div>
+              <p class="topic-body">Digital literacy is the ability to use technology effectively, responsibly, and ethically. It includes skills such as critical thinking, communication, information evaluation, and online safety.</p>
+              <div class="topic-reflections">
+                <div class="reflection-block">
+                  <h4 class="reflection-label">What I Realized</h4>
+                  <p>Digital literacy is more than just knowing how to use devices or applications. It's about understanding how to use technology <em>wisely</em> and responsibly. We must be careful in evaluating sources and avoiding misinformation.</p>
+                </div>
+                <div class="reflection-block">
+                  <h4 class="reflection-label">Key Insight</h4>
+                  <p>Being digitally literate requires awareness, discipline, and critical thinking. It is an essential skill for both students and teachers in a world where information is easily accessible.</p>
+                </div>
+                <div class="reflection-block">
+                  <h4 class="reflection-label">Moving Forward</h4>
+                  <p>I will practice responsible use of technology and continue improving my digital literacy skills throughout my academic and professional journey.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL SYNTHESIS -->
+    <section class="section synthesis-section" id="synthesis">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Looking Back</p>
+          <h2 class="section-title">Final Synthesis</h2>
+        </div>
+        <div class="synthesis-grid">
+          <div class="synthesis-main glass reveal">
+            <p>Throughout this learning journey, I realized that technology plays a significant role in education, but it must be used <strong>thoughtfully and effectively</strong>. I learned that both non-digital and digital tools have their own strengths, and combining them creates a more balanced and meaningful learning experience.</p>
+            <p>I also developed a deeper understanding of ICT tools, collaboration, and digital literacy. These skills are essential in preparing me for the challenges of 21st-century education.</p>
+            <p>Creating this e-portfolio allowed me to reflect on my growth and appreciate how far I have come as a learner. It also inspired me to continue improving and adapting to the changing demands of education.</p>
+            <p>As a future educator, I am committed to integrating technology meaningfully, fostering collaboration, and continuously developing my skills to provide the best possible learning experiences for my students.</p>
+          </div>
+          <div class="synthesis-pillars reveal">
+            <div class="pillar glass">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h4>Balance</h4>
+              <p>Combining digital and non-digital approaches for inclusive learning</p>
+            </div>
+            <div class="pillar glass">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <h4>Growth</h4>
+              <p>Continuous improvement through reflection and deliberate practice</p>
+            </div>
+            <div class="pillar glass">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+              </div>
+              <h4>Responsibility</h4>
+              <p>Using technology ethically, wisely, and with critical awareness</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER CTA -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-inner glass reveal">
+          <p class="section-label">Get In Touch</p>
+          <h2 class="contact-title">Let's Connect</h2>
+          <p class="contact-sub">Feel free to reach out to discuss education, technology, or anything in between.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+              <span>Samar State University, Catbalogan City</span>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>BSEd Student — Samar State University</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-name">Ryza Mae Diocton - BSED SOCSTUD2</p>
+        <p class="footer-copy">&copy; 2026 · E-Portfolio · Technology-Enhanced Learning · Samar State University</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
